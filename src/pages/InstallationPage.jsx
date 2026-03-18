@@ -26,7 +26,7 @@ export default function InstallationPage() {
   return (
     <section className="container page-spacing">
       <div className="section-head center">
-        <h2>Your Installed Apps</h2>
+        <h2>My Installation</h2>
         <p>Explore all trending apps on the market developed by us.</p>
       </div>
 
@@ -39,8 +39,8 @@ export default function InstallationPage() {
           onChange={(event) => setSortBy(event.target.value)}
           aria-label="Sort installed apps by downloads"
         >
-          <option value="high-low">Sort By Size (High-Low)</option>
-          <option value="low-high">Sort By Size (Low-High)</option>
+          <option value="high-low">Sort By Downloads (High-Low)</option>
+          <option value="low-high">Sort By Downloads (Low-High)</option>
         </select>
       </div>
 
