@@ -4,6 +4,7 @@ export const appsData = [
     image: "/icons/forest-focus.svg",
     title: "Forest: Focus For Productivity",
     companyName: "heroio labs",
+    category: "Productivity",
     description:
       "Forest helps you stay focused by turning your work sessions into a growing digital garden. Start a timer, avoid distractions, and watch your trees grow while you finish meaningful work.",
     size: 258,
@@ -23,6 +24,7 @@ export const appsData = [
     image: "/icons/smplan-todo.svg",
     title: "SmPlan: ToDo List With Reminder",
     companyName: "productive.io",
+    category: "Productivity",
     description:
       "SmPlan is a complete planner for personal and team tasks. Build daily agendas, set smart reminders, and organize priorities to turn busy schedules into clear action plans.",
     size: 291,
@@ -42,6 +44,7 @@ export const appsData = [
     image: "/icons/flip-timer.svg",
     title: "FLIP - Focus Timer For Study",
     companyName: "focus wave",
+    category: "Education",
     description:
       "FLIP gives students a distraction-free timer with deep-focus mode, session history, and study streak tracking to make preparation more disciplined and measurable.",
     size: 212,
@@ -61,6 +64,7 @@ export const appsData = [
     image: "/icons/pomocat.svg",
     title: "Pomocat - Cute Pomodoro Timer",
     companyName: "neo student",
+    category: "Productivity",
     description:
       "Pomocat combines pomodoro routines with playful visuals. Work in short bursts, collect badges, and keep momentum with gentle break reminders.",
     size: 184,
@@ -80,6 +84,7 @@ export const appsData = [
     image: "/icons/time-planner.svg",
     title: "Time Planner: Schedule & Tasks",
     companyName: "dailygen",
+    category: "Productivity",
     description:
       "Design your week with drag-and-drop plans, recurring tasks, and deadline alerts. Time Planner keeps your routine structured and visible at a glance.",
     size: 244,
@@ -99,6 +104,7 @@ export const appsData = [
     image: "/icons/morning-habits.svg",
     title: "Morning Habits - Daily Routine",
     companyName: "mind stack",
+    category: "Health",
     description:
       "Build consistent mornings with habit chains, alarms, and progress insights. The app keeps your routine intentional and rewarding every day.",
     size: 176,
@@ -118,6 +124,7 @@ export const appsData = [
     image: "/icons/focus-plant.svg",
     title: "Focus Plant: Pomodoro Forest",
     companyName: "leaf studio",
+    category: "Productivity",
     description:
       "Stay concentrated with pomodoro sessions that grow a virtual forest. Each completed cycle visualizes your effort and encourages deep-work habits.",
     size: 203,
@@ -137,6 +144,7 @@ export const appsData = [
     image: "/icons/alarmy.svg",
     title: "Alarmy - Alarm Clock & Sleep",
     companyName: "wake team",
+    category: "Health",
     description:
       "Alarmy helps heavy sleepers wake up on time using missions, loud sounds, and sleep reminders. Build healthier sleep and morning discipline.",
     size: 310,
@@ -156,6 +164,7 @@ export const appsData = [
     image: "/icons/task-orbit.svg",
     title: "Task Orbit - Team Tasks",
     companyName: "orbit labs",
+    category: "Utility",
     description:
       "A collaborative task manager with channels, deadlines, and role-based assignments for teams that need fast and transparent execution.",
     size: 340,
@@ -175,6 +184,7 @@ export const appsData = [
     image: "/icons/deep-notes.svg",
     title: "Deep Notes - Smart Notebook",
     companyName: "brainbox",
+    category: "Utility",
     description:
       "Capture, organize, and retrieve ideas quickly using folders, labels, and synced notes. Deep Notes keeps your thoughts searchable and secure.",
     size: 128,
@@ -194,6 +204,7 @@ export const appsData = [
     image: "/icons/habit-arc.svg",
     title: "Habit Arc - Goal Streaks",
     companyName: "momentum inc",
+    category: "Health",
     description:
       "Track personal goals with streak heatmaps and smart reminders. Habit Arc motivates steady progress with daily wins and milestone celebrations.",
     size: 149,
@@ -213,6 +224,7 @@ export const appsData = [
     image: "/icons/brain-sprint.svg",
     title: "Brain Sprint - Focus Sounds",
     companyName: "soundly",
+    category: "Utility",
     description:
       "Brain Sprint offers curated ambient mixes and concentration sounds to reduce distractions and boost productivity during long work sessions.",
     size: 202,

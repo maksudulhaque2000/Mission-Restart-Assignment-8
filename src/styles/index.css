@@ -256,40 +256,121 @@ a {
 
 .app-card {
   position: relative;
-  display: block;
-  background: #fff;
-  border: 1px solid #e8ecf2;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8fafd 60%, #f0f2f6 100%);
+  border: 1.5px solid #e3e8f0;
+  border-radius: 16px;
   overflow: hidden;
-  padding-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(60, 80, 120, 0.06);
+  padding: 0 0 16px 0;
   transition:
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+    box-shadow 0.18s,
+    transform 0.18s;
+  min-height: 320px;
 }
-
 .app-card:hover {
-  box-shadow: 0 18px 40px rgba(12, 37, 75, 0.12);
-  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(60, 80, 120, 0.13);
+  transform: translateY(-4px) scale(1.025);
 }
-
+.app-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px 14px 0 14px;
+  min-height: 38px;
+}
+.category-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #eaf4ff;
+  color: #2b4a7a;
+  letter-spacing: 0.5px;
+  margin-right: 6px;
+}
+.category-productivity {
+  background: #eaf4ff;
+  color: #2b4a7a;
+}
+.category-health {
+  background: #e6fcf5;
+  color: #087f5b;
+}
+.category-education {
+  background: #fff3bf;
+  color: #b68900;
+}
+.category-utility {
+  background: #f3f0ff;
+  color: #6741d9;
+}
+.modern-fav {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.15s;
+}
+.modern-fav svg {
+  display: block;
+  transition:
+    fill 0.2s,
+    stroke 0.2s;
+}
+.modern-fav.is-favorite svg {
+  transform: scale(1.15) rotate(-8deg);
+  filter: drop-shadow(0 2px 6px #de3c6822);
+}
+.app-card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  flex: 1;
+}
+.app-image-wrap {
+  width: 92px;
+  height: 92px;
+  margin: 18px auto 0 auto;
+  border-radius: 18px;
+  background: #f6f8fa;
+  box-shadow: 0 2px 8px #e3e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 .app-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  background: #dcdcdc;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #f0f2f6;
+  box-shadow: 0 1px 4px #e3e8f0;
 }
-
-.app-card h3 {
-  font-size: 13px;
-  margin: 8px 8px 5px;
+.app-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 14px 0 6px 0;
+  color: #1a2540;
+  min-height: 36px;
+  letter-spacing: 0.1px;
 }
-
 .app-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 0 8px;
-  font-size: 12px;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 0 0 0;
+  font-size: 13px;
 }
 
 .downloads {

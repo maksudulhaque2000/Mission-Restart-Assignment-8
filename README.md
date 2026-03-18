@@ -1,91 +1,74 @@
 # Hero IO AppNest
 
-Hero IO AppNest is a responsive app marketplace web application where users can browse productivity apps, search by title, view app details with rating charts, install apps, and manage installations.
+A modern, responsive app marketplace built with React, Vite, and Recharts. Browse, search, and install productivity, health, education, and utility apps with a beautiful UI, dark/light mode, and blazing-fast performance.
 
-## Live Features
+## 🚀 Live Demo
 
-- Responsive UI for desktop, tablet, and mobile
-- Header with logo, route navigation, active route indication, and Contribute button
-- Home page with banner, stats cards, and top 8 trending apps
-- All Apps page with live case-insensitive title search
-- Search loading animation and no-result state
-- App Details page with:
-  - app summary (downloads, rating, reviews)
-  - install button with installed state
-  - success toast after install
-  - responsive Recharts rating chart
-  - app description section
-- My Installation page with:
-  - installed app list from localStorage
-  - uninstall with toast
-  - sort by downloads (High-Low / Low-High)
-- Custom not found pages:
-  - invalid route 404 page
-  - app not found message in app details
-- Route transition loading animation
+[Live Site](https://your-vercel-link.com)
 
-## Technologies
+## ✨ Features
 
-- React
-- React Router DOM
-- Recharts
+- Responsive design for all devices
+- Dark/Light mode toggle
+- App category filter (Productivity, Health, Education, Utility)
+- Live search and sort (downloads, rating)
+- App details with install, reviews, and Recharts chart
+- My Installation page with uninstall and summary
+- Favorites (localStorage sync)
+- Custom 404 and not found pages
+- Loading animations for navigation/search
+- Vercel SPA deployment ready (vercel.json included)
+
+## 🛠️ Technologies
+
+- React 19
+- Vite 8
+- React Router DOM 6
+- Recharts 3
 - React Hot Toast
-- Vite
-- CSS
+- CSS (custom, responsive)
 
-## Local Development
+## 🏁 Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build For Production
+## 🏗️ Build & Preview
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deployment Note (SPA Reload Fix)
+## 📝 Project Structure
 
-This project includes `vercel.json` rewrite rules so reloading any route does not return 404 on Vercel deployment.
+- `src/` — All React source code
+- `public/assets/` — All images/icons (must be in public for deployment)
+- `src/data/apps.js` — App data (with category)
+- `src/pages/` — Main pages (Home, Apps, Installation, Details, 404)
+- `src/components/` — UI components (AppCard, Header, Footer, etc.)
+- `src/styles/` — CSS
 
-## Vercel Deployment (Zero-Error Checklist)
+## 🌐 Deployment (Vercel)
 
-1. Push your latest code to GitHub.
-2. Go to Vercel Dashboard and click **Add New -> Project**.
-3. Import this repository: `maksudulhaque2000/Mission-Restart-Assignment-8`.
-4. Configure project settings:
+- Push to GitHub
+- Import to Vercel (Framework: Vite, Output: dist)
+- `vercel.json` ensures SPA routing works (no 404 on reload)
 
-- Framework Preset: `Vite`
-- Build Command: `npm run build`
-- Output Directory: `dist`
-- Install Command: `npm install`
-- Node.js Version: `20.x` or `22.x`
+## 📸 Screenshots
 
-5. Click **Deploy**.
-6. After deployment, open these routes manually to confirm reload safety:
+![Home Page](./public/assets/hero.png)
 
-- `/`
-- `/apps`
-- `/installation`
-- `/apps/1`
+## 🤝 Contributing
 
-## Why This Will Not Break On Refresh
+Pull requests welcome! For major changes, open an issue first.
 
-- `vercel.json` rewrite sends unknown routes to `index.html`.
-- React Router handles route rendering on the client side.
-- Production build is validated with `npm run build`.
+## 📄 License
 
-## Pre-Deploy Local Validation
+MIT
 
-```bash
-npm install
-npm run build
-npm run preview
-```
+---
 
-If these commands pass locally, Vercel deployment should also pass.
-
-# Mission-Restart-Assignment-8
+> Developed by Maksudul Haque | [GitHub](https://github.com/maksudulhaque2000)

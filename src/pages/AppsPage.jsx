@@ -23,14 +23,17 @@ export default function AppsPage() {
   const [isSearching, setIsSearching] = useState(false);
   const [sortBy, setSortBy] = useState("default");
   const [minRating, setMinRating] = useState(0);
+  const [category, setCategory] = useState("all");
   const [searchHistory, setSearchHistory] = useState(readHistory);
   const searchTimer = useRef(null);
 
   const filteredApps = useMemo(() => {
-    const base = appsData
+    let base = appsData
       .filter((app) => app.title.toLowerCase().includes(query.toLowerCase()))
       .filter((app) => app.ratingAvg >= minRating);
-
+    if (category !== "all") {
+      base = base.filter((app) => app.category === category);
+    }
     if (sortBy === "downloads-high") {
       return [...base].sort((a, b) => b.downloads - a.downloads);
     }
@@ -41,7 +44,7 @@ export default function AppsPage() {
       return [...base].sort((a, b) => b.ratingAvg - a.ratingAvg);
     }
     return base;
-  }, [query, sortBy, minRating]);
+  }, [query, sortBy, minRating, category]);
 
   useEffect(() => {
     return () => {
@@ -107,6 +110,17 @@ export default function AppsPage() {
             placeholder="search apps"
             aria-label="Search apps by title"
           />
+          <select
+            value={category}
+            onChange={(event) => setCategory(event.target.value)}
+            aria-label="Filter by category"
+          >
+            <option value="all">All Categories</option>
+            <option value="Productivity">Productivity</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="Utility">Utility</option>
+          </select>
           <select
             value={sortBy}
             onChange={(event) => setSortBy(event.target.value)}
