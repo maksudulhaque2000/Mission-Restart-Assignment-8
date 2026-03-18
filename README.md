@@ -1,10 +1,14 @@
 # Hero IO AppNest
 
+<div align="center">
+  <img src="./public/preview.png" height="400" width="800" alt="RideX Cover"/>
+</div>
+
 A modern, responsive app marketplace built with React, Vite, and Recharts. Browse, search, and install productivity, health, education, and utility apps with a beautiful UI, dark/light mode, and blazing-fast performance.
 
 ## 🚀 Live Demo
 
-[Live Site](https://your-vercel-link.com)
+[Live Site](https://mission-restart-assignment-8.vercel.app)
 
 ## ✨ Features
 

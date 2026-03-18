@@ -71,7 +71,10 @@ export default function HomePage() {
         ))}
       </section>
 
-      <div className="center">
+      <div
+        className="center show-all-btn-wrap"
+        style={{ marginTop: 64, marginBottom: 24 }}
+      >
         <Link className="btn" to="/apps">
           Show All
         </Link>
