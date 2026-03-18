@@ -50,3 +50,4 @@ npm run preview
 ## Deployment Note (SPA Reload Fix)
 
 This project includes `vercel.json` rewrite rules so reloading any route does not return 404 on Vercel deployment.
+# Mission-Restart-Assignment-8
