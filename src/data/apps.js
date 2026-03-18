@@ -1,8 +1,7 @@
 export const appsData = [
   {
     id: 1,
-    image:
-      "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/forest-focus.svg",
     title: "Forest: Focus For Productivity",
     companyName: "heroio labs",
     description:
@@ -21,8 +20,7 @@ export const appsData = [
   },
   {
     id: 2,
-    image:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/smplan-todo.svg",
     title: "SmPlan: ToDo List With Reminder",
     companyName: "productive.io",
     description:
@@ -41,8 +39,7 @@ export const appsData = [
   },
   {
     id: 3,
-    image:
-      "https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/flip-timer.svg",
     title: "FLIP - Focus Timer For Study",
     companyName: "focus wave",
     description:
@@ -61,8 +58,7 @@ export const appsData = [
   },
   {
     id: 4,
-    image:
-      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/pomocat.svg",
     title: "Pomocat - Cute Pomodoro Timer",
     companyName: "neo student",
     description:
@@ -81,8 +77,7 @@ export const appsData = [
   },
   {
     id: 5,
-    image:
-      "https://images.unsplash.com/photo-1484981138541-b1dc948e6c9b?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/time-planner.svg",
     title: "Time Planner: Schedule & Tasks",
     companyName: "dailygen",
     description:
@@ -101,8 +96,7 @@ export const appsData = [
   },
   {
     id: 6,
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/morning-habits.svg",
     title: "Morning Habits - Daily Routine",
     companyName: "mind stack",
     description:
@@ -121,8 +115,7 @@ export const appsData = [
   },
   {
     id: 7,
-    image:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/focus-plant.svg",
     title: "Focus Plant: Pomodoro Forest",
     companyName: "leaf studio",
     description:
@@ -141,8 +134,7 @@ export const appsData = [
   },
   {
     id: 8,
-    image:
-      "https://images.unsplash.com/photo-1554774853-b414d2a2b67f?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/alarmy.svg",
     title: "Alarmy - Alarm Clock & Sleep",
     companyName: "wake team",
     description:
@@ -161,8 +153,7 @@ export const appsData = [
   },
   {
     id: 9,
-    image:
-      "https://images.unsplash.com/photo-1515942661900-94b3d1972591?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/task-orbit.svg",
     title: "Task Orbit - Team Tasks",
     companyName: "orbit labs",
     description:
@@ -181,8 +172,7 @@ export const appsData = [
   },
   {
     id: 10,
-    image:
-      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/deep-notes.svg",
     title: "Deep Notes - Smart Notebook",
     companyName: "brainbox",
     description:
@@ -201,8 +191,7 @@ export const appsData = [
   },
   {
     id: 11,
-    image:
-      "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/habit-arc.svg",
     title: "Habit Arc - Goal Streaks",
     companyName: "momentum inc",
     description:
@@ -221,8 +210,7 @@ export const appsData = [
   },
   {
     id: 12,
-    image:
-      "https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=500&q=60",
+    image: "/icons/brain-sprint.svg",
     title: "Brain Sprint - Focus Sounds",
     companyName: "soundly",
     description:
