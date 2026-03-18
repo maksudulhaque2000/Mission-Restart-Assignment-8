@@ -50,4 +50,38 @@ npm run preview
 ## Deployment Note (SPA Reload Fix)
 
 This project includes `vercel.json` rewrite rules so reloading any route does not return 404 on Vercel deployment.
+
+## Vercel Deployment (Zero-Error Checklist)
+
+1. Push your latest code to GitHub.
+2. Go to Vercel Dashboard and click **Add New -> Project**.
+3. Import this repository: `maksudulhaque2000/Mission-Restart-Assignment-8`.
+4. Configure project settings:
+  - Framework Preset: `Vite`
+  - Build Command: `npm run build`
+  - Output Directory: `dist`
+  - Install Command: `npm install`
+  - Node.js Version: `20.x` or `22.x`
+5. Click **Deploy**.
+6. After deployment, open these routes manually to confirm reload safety:
+  - `/`
+  - `/apps`
+  - `/installation`
+  - `/apps/1`
+
+## Why This Will Not Break On Refresh
+
+- `vercel.json` rewrite sends unknown routes to `index.html`.
+- React Router handles route rendering on the client side.
+- Production build is validated with `npm run build`.
+
+## Pre-Deploy Local Validation
+
+```bash
+npm install
+npm run build
+npm run preview
+```
+
+If these commands pass locally, Vercel deployment should also pass.
 # Mission-Restart-Assignment-8
