@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap");
 
 :root {
-  --bg-main: #0f3752;
+  --bg-main: #f5f7fa;
   --bg-light: #f0f2f6;
   --bg-card: #ffffff;
   --text-main: #0f2942;
@@ -20,7 +20,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(circle at 5% 8%, #194768 0, var(--bg-main) 45%);
+  background: var(--bg-main);
   color: var(--text-main);
   font-family: "Manrope", sans-serif;
 }
@@ -68,6 +68,22 @@ a {
   gap: 10px;
   font-weight: 800;
   font-family: "Sora", sans-serif;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.hero-img {
+  max-width: 120px;
+  width: 100%;
+  margin-bottom: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-mark {

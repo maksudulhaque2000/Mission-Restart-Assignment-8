@@ -11,8 +11,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <Link to="/" className="logo-wrap" aria-label="Hero IO Home">
-          <span className="logo-mark">H</span>
-          <span className="logo-text">HERO.IO</span>
+          <img src="/assets/logo.png" alt="Hero IO Logo" className="logo-img" />
         </Link>
 
         <nav className="main-nav" aria-label="Main navigation">

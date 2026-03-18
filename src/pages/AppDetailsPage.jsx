@@ -28,10 +28,7 @@ export default function AppDetailsPage() {
   if (!app) {
     return (
       <section className="container not-found-app page-spacing">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"
-          alt="App not found"
-        />
+        <img src="/assets/App-Error.png" alt="App not found" />
         <h2>OPPS!! APP NOT FOUND</h2>
         <p>
           The app you are requesting is not found in our system. Please try

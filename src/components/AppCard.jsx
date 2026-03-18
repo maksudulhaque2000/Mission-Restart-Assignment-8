@@ -9,6 +9,17 @@ import {
 import { getInstalledEventName, isInstalled } from "../utils/storage";
 
 export default function AppCard({ app }) {
+  // Fallback demo images
+  const demoImages = [
+    "/assets/demo-app (1).webp",
+    "/assets/demo-app (2).webp",
+    "/assets/demo-app (3).webp",
+    "/assets/demo-app (4).webp",
+    "/assets/demo-app (5).webp",
+    "/assets/demo-app (6).webp",
+  ];
+  const fallbackImage = demoImages[app.id % demoImages.length];
+  const imageSrc = app.image ? app.image : fallbackImage;
   const [favorite, setFavorite] = useState(() => isFavorite(app.id));
   const [installed, setInstalled] = useState(() => isInstalled(app.id));
 
@@ -47,7 +58,7 @@ export default function AppCard({ app }) {
 
       <Link to={`/apps/${app.id}`} aria-label={`Open ${app.title}`}>
         <img
-          src={app.image}
+          src={imageSrc}
           alt={app.title}
           className="app-image"
           loading="lazy"

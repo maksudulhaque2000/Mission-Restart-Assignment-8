@@ -11,6 +11,7 @@ export default function HomePage() {
   return (
     <section className="container home-page">
       <div className="hero-banner">
+        <img src="/assets/hero.png" alt="Hero Banner" className="hero-img" />
         <h1>
           We Build <span>Productive</span> Apps
         </h1>
@@ -18,7 +19,6 @@ export default function HomePage() {
           At HERO.IO, we craft innovative apps designed to make everyday life
           simple, smarter, and more exciting.
         </p>
-
         <div className="hero-actions">
           <a
             href="https://play.google.com/store"
@@ -28,34 +28,37 @@ export default function HomePage() {
           >
             Google Play
           </a>
-          <a
-            href="https://www.apple.com/app-store/"
-            target="_blank"
-            rel="noreferrer"
-            className="btn"
-          >
-            App Store
-          </a>
+        </div>
+        <div className="stats-section">
+          <div className="stat-card">
+            <img
+              src="/assets/icon-downloads.png"
+              alt="Downloads"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>{formatDownloads(totalDownloads)}</h3>
+            <p>Total Downloads</p>
+          </div>
+          <div className="stat-card">
+            <img
+              src="/assets/icon-review.png"
+              alt="Reviews"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>{totalReviews}</h3>
+            <p>Total Reviews</p>
+          </div>
+          <div className="stat-card">
+            <img
+              src="/assets/icon-ratings.png"
+              alt="Ratings"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>4.8</h3>
+            <p>Average Rating</p>
+          </div>
         </div>
       </div>
-
-      <section className="stats-section">
-        <article className="stat-card">
-          <p>Total Downloads</p>
-          <h3>{formatDownloads(totalDownloads)}</h3>
-          <small>Across all listed apps</small>
-        </article>
-        <article className="stat-card">
-          <p>Total Reviews</p>
-          <h3>{formatDownloads(totalReviews)}</h3>
-          <small>Real user feedback</small>
-        </article>
-        <article className="stat-card">
-          <p>Active Apps</p>
-          <h3>{appsData.length}+</h3>
-          <small>More launching every month</small>
-        </article>
-      </section>
 
       <section className="section-head center">
         <h2>Trending Apps</h2>

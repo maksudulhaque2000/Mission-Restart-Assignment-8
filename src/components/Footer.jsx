@@ -3,8 +3,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <span className="logo-mark">H</span>
-          <span>HERO.IO</span>
+          <img src="/assets/logo.png" alt="Hero IO Logo" className="logo-img" />
         </div>
 
         <p>Copyright © 2025 - All right reserved</p>

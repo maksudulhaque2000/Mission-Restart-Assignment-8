@@ -36,6 +36,35 @@ export default function InstallationPage() {
       <div className="section-head center">
         <h2>My Installation</h2>
         <p>Explore all trending apps on the market developed by us.</p>
+        <div className="stats-section">
+          <div className="stat-card">
+            <img
+              src="/assets/icon-downloads.png"
+              alt="Downloads"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>{installedApps.length}</h3>
+            <p>Installed Apps</p>
+          </div>
+          <div className="stat-card">
+            <img
+              src="/assets/icon-review.png"
+              alt="Total Size"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>{totalSize} MB</h3>
+            <p>Total Size</p>
+          </div>
+          <div className="stat-card">
+            <img
+              src="/assets/icon-ratings.png"
+              alt="Average Rating"
+              style={{ width: 32, height: 32 }}
+            />
+            <h3>{averageRating}</h3>
+            <p>Average Rating</p>
+          </div>
+        </div>
       </div>
 
       <div className="installation-toolbar">
