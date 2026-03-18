@@ -57,17 +57,20 @@ This project includes `vercel.json` rewrite rules so reloading any route does no
 2. Go to Vercel Dashboard and click **Add New -> Project**.
 3. Import this repository: `maksudulhaque2000/Mission-Restart-Assignment-8`.
 4. Configure project settings:
-  - Framework Preset: `Vite`
-  - Build Command: `npm run build`
-  - Output Directory: `dist`
-  - Install Command: `npm install`
-  - Node.js Version: `20.x` or `22.x`
+
+- Framework Preset: `Vite`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Install Command: `npm install`
+- Node.js Version: `20.x` or `22.x`
+
 5. Click **Deploy**.
 6. After deployment, open these routes manually to confirm reload safety:
-  - `/`
-  - `/apps`
-  - `/installation`
-  - `/apps/1`
+
+- `/`
+- `/apps`
+- `/installation`
+- `/apps/1`
 
 ## Why This Will Not Break On Refresh
 
@@ -84,4 +87,5 @@ npm run preview
 ```
 
 If these commands pass locally, Vercel deployment should also pass.
+
 # Mission-Restart-Assignment-8
