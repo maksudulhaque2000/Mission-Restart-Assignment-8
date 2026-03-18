@@ -239,6 +239,7 @@ a {
 }
 
 .app-card {
+  position: relative;
   display: block;
   background: #fff;
   border: 1px solid #e8ecf2;
@@ -301,6 +302,82 @@ a {
   font: inherit;
 }
 
+.apps-toolbar select {
+  min-width: 210px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fff;
+}
+
+.apps-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(10, 33, 57, 0.7);
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.favorite-btn.is-favorite {
+  background: #de3c68;
+}
+
+.badge-installed {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #11c08a;
+  color: #fff;
+  z-index: 2;
+}
+
+.filter-row,
+.history-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.chip,
+.history-chip {
+  border: 1px solid #c8d4e2;
+  background: #fff;
+  color: var(--text-main);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.chip-active {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--brand);
+}
+
+.history-row span {
+  color: var(--text-sub);
+  font-size: 13px;
+}
+
 .search-loader {
   display: inline-flex;
   align-items: center;
@@ -328,6 +405,31 @@ a {
 .installed-list {
   display: grid;
   gap: 10px;
+}
+
+.install-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.install-summary article {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.install-summary p {
+  margin: 0;
+  color: var(--text-sub);
+  font-size: 12px;
+}
+
+.install-summary h4 {
+  margin: 4px 0 0;
+  font-size: 26px;
 }
 
 .installed-item {
@@ -517,6 +619,30 @@ a {
   font-size: 11px;
 }
 
+.back-top {
+  position: fixed;
+  right: 16px;
+  bottom: 18px;
+  border: 0;
+  background: var(--brand);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 35;
+}
+
+.show-top {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -580,9 +706,19 @@ a {
     align-items: flex-start;
   }
 
+  .apps-inputs {
+    width: 100%;
+    flex-direction: column;
+  }
+
   .apps-toolbar input,
+  .apps-toolbar select,
   .installation-toolbar select {
     width: 100%;
+  }
+
+  .install-summary {
+    grid-template-columns: 1fr;
   }
 
   .installed-item {
@@ -623,5 +759,12 @@ a {
 
   .hero-banner {
     padding: 42px 12px;
+  }
+
+  .back-top {
+    right: 10px;
+    bottom: 12px;
+    padding: 9px 12px;
+    font-size: 12px;
   }
 }

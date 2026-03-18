@@ -1,4 +1,5 @@
 const INSTALLED_KEY = "heroio_installed_apps";
+const INSTALLED_EVENT = "heroio:installed-updated";
 
 function readInstalledIds() {
   try {
@@ -11,6 +12,7 @@ function readInstalledIds() {
 
 function writeInstalledIds(ids) {
   localStorage.setItem(INSTALLED_KEY, JSON.stringify(ids));
+  window.dispatchEvent(new CustomEvent(INSTALLED_EVENT));
 }
 
 export function getInstalledIds() {
@@ -32,4 +34,8 @@ export function installApp(appId) {
 export function uninstallApp(appId) {
   const ids = readInstalledIds().filter((id) => id !== appId);
   writeInstalledIds(ids);
+}
+
+export function getInstalledEventName() {
+  return INSTALLED_EVENT;
 }

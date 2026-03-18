@@ -3,6 +3,7 @@ import { Outlet, useLocation, useNavigation } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageLoader from "../components/PageLoader";
+import BackToTop from "../components/BackToTop";
 
 export default function MainLayout() {
   const navigation = useNavigation();
@@ -24,6 +25,7 @@ export default function MainLayout() {
         {isRouting ? <PageLoader /> : <Outlet />}
       </main>
       <Footer />
+      <BackToTop />
     </div>
   );
 }

@@ -17,6 +17,14 @@ export default function InstallationPage() {
     return sorted;
   }, [installedIds, sortBy]);
 
+  const totalSize = installedApps.reduce((sum, app) => sum + app.size, 0);
+  const averageRating = installedApps.length
+    ? (
+        installedApps.reduce((sum, app) => sum + app.ratingAvg, 0) /
+        installedApps.length
+      ).toFixed(1)
+    : "0.0";
+
   const handleUninstall = (id, title) => {
     uninstallApp(id);
     setInstalledIds((prev) => prev.filter((appId) => appId !== id));
@@ -42,6 +50,17 @@ export default function InstallationPage() {
           <option value="high-low">Sort By Downloads (High-Low)</option>
           <option value="low-high">Sort By Downloads (Low-High)</option>
         </select>
+      </div>
+
+      <div className="install-summary">
+        <article>
+          <p>Total App Size</p>
+          <h4>{totalSize} MB</h4>
+        </article>
+        <article>
+          <p>Average Rating</p>
+          <h4>{averageRating}</h4>
+        </article>
       </div>
 
       {installedApps.length === 0 ? (
